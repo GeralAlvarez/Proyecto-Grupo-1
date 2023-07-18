@@ -10,93 +10,181 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
+      body {
+        max-width: 1440px;
+        margin: 0 auto;
+        font-family: "Poppins", sans-serif;
+      }
       .imgLogoVerde {
         width: 40px;
       }
+      .buttonStyle {
+        font-size: 13px;
+      }
+      .titleStyle {
+        font-size: 50px;
+      }
+      .headerImg{
+        height: 400px;
+      }
+      .sectionStyle{
+        filter: brightness(0) invert(1);
+
+      }
+      .sectionIcon{
+        width: 60px;
+        height: 60px;
+        border-radius: 20%;
+        background-color: #2ad167;
+        padding: 18px;
+        margin: 30px 0 30px 0;
+      }
+      .sectionCenter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     </style>
   </head>
-  <body>
+  <body class="p-2">
     <header>
-      <nav>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <div class="col-auto">
-              <a class="navbar-brand" href="#"
-                ><img
-                  src="Materiales/logo-verde.png"
-                  alt="logo-verde"
-                  class="imgLogoVerde"
-                />
-                Flex
-              </a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-
-            <div class="col"></div>
-
-            <div class="col-auto collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" style="font-weight: 500;"  href="#">Producto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" style="font-weight: 500;" href="#">Características</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" style="font-weight: 500;" href="#">Precios</a>
-                  </li>
-                </ul>
-            </div>
-
-            <div class="col"></div>
-
-            <div class="col-auto">
-              <button class="border-0 btn btn-light" style="font-weight: 500; color: #575757;">Ingresar</button>
-              <button
-                type="button"
-                class="btn btn-success border-0 m-3"
-                style="background-color: #2ad167"
-              >
-                Registrarse
-              </button>
-            </div>
+      <nav class="navbar navbar-expand-lg .bg-light">
+        <div class="container-fluid">
+          <div class="col-auto">
+            <a class="navbar-brand" href="#"
+              ><img
+                src="Materiales/logo-verde.png"
+                alt="logo-verde"
+                class="imgLogoVerde"
+              />
+              Flex
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
-        </nav>
+
+          <div class="col"></div>
+
+          <div
+            class="col-auto collapse navbar-collapse d-flex justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: 400" href="#"
+                  >Producto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: 400" href="#"
+                  >Características</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: 400" href="#"
+                  >Precios</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col"></div>
+
+          <div class="col-auto">
+            <button
+              class="border-0 btn btn-light buttonStyle"
+              style="font-weight: 400; color: #575757"
+            >
+              Ingresar
+            </button>
+            <button
+              type="button"
+              class="btn btn-success border-0 m-3 buttonStyle"
+              style="background-color: #2ad167"
+            >
+              Registrarse
+            </button>
+          </div>
+        </div>
       </nav>
 
-      <div class="header">
-        <div>
-          <h6></h6>
-          <h1></h1>
-          <p></p>
-          <button></button>
-          <button></button>
+      <div class="p-5 header row">
+        <div class="col-6">
+          <small
+            class="rounded-pill text-light px-1"
+            style="background-color: #2ad167"
+          >
+            NUEVO
+          </small>
+          <h1 class="py-4 titleStyle" style="font-weight: 700">
+            La plataforma para <br />
+            las empresas del <br />
+            futuro
+          </h1>
+          <p style="font-weight: 400; color: #575757">
+            Productos pensados para los negocios del proximo siglo
+          </p>
+          <button
+            type="button"
+            class="btn btn-success btn-lg border-0 me-2 buttonStyle"
+            style="background-color: #2ad167"
+          >
+            Solicitar demo
+          </button>
+          <button
+            class="btn border border-light-subtle btn-lg buttonStyle"
+            style="font-weight: 100"
+          >
+            Registrarse
+          </button>
         </div>
-        <div>
-          <img src="" alt="" />
+        <div class="col-6 d-flex justify-content-end">
+          <img class="headerImg"
+            src="/Proyecto-Grupo-1/3-Primer_proyecto_integrador_FSDB/Materiales/header.jpg"
+            alt=""
+          />
         </div>
       </div>
     </header>
 
     <main>
-      <div class="sections">
-        <div></div>
-        <div></div>
-        <div></div>
+      <div class=" d-flex justify-content-around my-5 sections">
+        <div class="sectionCenter">
+          <div class="sectionIcon"><img class=" sectionStyle" src="/Proyecto-Grupo-1/3-Primer_proyecto_integrador_FSDB/Materiales/mail-icon.svg" alt="" /></div>
+          <h5>Capacitacion</h5>
+          <p class="text-center" style="font-weight: 400; color: #575757">Asistencia y capacitacion de primer <br> nivel</p>
+        </div>
+        <div class="sectionCenter">
+          <div class="sectionIcon"><img class=" sectionStyle" src="/Proyecto-Grupo-1/3-Primer_proyecto_integrador_FSDB/Materiales/analytics-icon.svg" alt="" /></div>
+          <h5>Analiticas claras</h3>
+          <p class="text-center" style="font-weight: 400; color: #575757">Disfruta de un dashboard de analiticas <br> claras y accionadas</p>
+        </div>
+        <div class="sectionCenter">
+          <div class="sectionIcon"><img class=" sectionStyle" class="py-1" src="/Proyecto-Grupo-1/3-Primer_proyecto_integrador_FSDB/Materiales/people-icon.svg" alt="" /></div>
+          <h5 class="text-center">Soluciones para equipos</h5>
+          <p class="text-center" style="font-weight: 400; color: #575757">
+            Facilita el accionar de tu empresa con <br> nuestra suite de herramientas
+          </p>
+        </div>
       </div>
       <div class="article">
-        <h2></h2>
+        <h2>Precios flexibles</h2>
         <p></p>
       </div>
       <div class="cardPrice">
