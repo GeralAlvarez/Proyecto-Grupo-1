@@ -12,9 +12,12 @@ body {
   font-size: 13px;
 }
 .titleStyle {
-  font-size: 50px;
+  font-size: 42px;
 }
-.headerImg {
+.titleHeader {
+  font-size: 55px;
+}
+.peopleImg {
   height: 400px;
 }
 .sectionStyle {
@@ -44,20 +47,29 @@ body {
   font-weight: 500;
 }
 .circle {
-  z-index: 2;
+  z-index: 1;
   position: relative;
   right: 70px;
   bottom: 450px;
   height: 0;
   overflow: visible;
 }
+.circleImg {
+  width: 115px;
+  height: 115px;
+}
 .dots {
-  z-index: 2;
+  z-index: 1;
   position: relative;
-  left: 340px;
-  bottom: 60px;
+  left: 370px;
+  bottom: 68px;
   height: 0;
+  width: 0;
   overflow: visible;
+}
+.dotsImg {
+  width: 115px;
+  height: 115px;
 }
 .imgHeader {
   position: relative;
@@ -67,6 +79,18 @@ body {
 .svgColor {
   fill: #2ad167;
   margin-right: 10px;
+}
+.btnHeaderGreen {
+  background-color: #2ad167;
+  width: 150px;
+  height: 45px;
+  border-radius: 5px;
+}
+.btnHeaderWhite {
+  font-weight: 400;
+  width: 120px;
+  height: 45px;
+  border-radius: 5px;
 }
 
 /* ESTILOS LOGIN */
@@ -83,6 +107,15 @@ body {
   flex-direction: column;
   margin: 10px;
   width: 350px;
+}
+.formTitle {
+  font-weight: 700;
+  font-size: 29px;
+}
+.formSubtitle {
+  font-weight: 500;
+  color: #cec4c4a9;
+  font-size: 18px;
 }
 .userData {
   display: flex;
@@ -113,7 +146,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.modal-content{
+.modal-content {
   background-color: #2a3342;
 }
 /* .inputCheck{
@@ -129,10 +162,94 @@ height: 15px;
 .text {
   color: white;
 }
-.btn-close{
+.btn-close {
   position: relative;
   top: 50px;
   left: 450px;
   z-index: 2;
   filter: brightness(0) invert(1);
+}
+.warnings {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: red;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+@media (max-width: 400px) {
+  .divForm {
+    width: 250px;
+  }
+  .containerForm {
+    padding: 10px;
+  }
+  .formTitle {
+    font-size: 20px;
+  }
+  .formSubtitle {
+    font-size: 13px;
+  }
+  .imgHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+  }
+  .peopleImg {
+    width: 334px;
+    height: 280px;
+    padding: 20px;
+    position: relative;
+    left: 0px;
+  }
+  .circleImg {
+    width: 65px;
+    height: 65px;
+  }
+  .circle {
+    bottom: 290px;
+    right: 15px;
+  }
+  .dotsImg {
+    width: 65px;
+    height: 65px;
+  }
+  .dots {
+    left: 251px;
+  }
+  .btnHeaderGreen {
+    height: 30px;
+    width: 120px;
+    font-size: 10px;
+  }
+  .btnHeaderWhite {
+    height: 30px;
+    width: 120px;
+    font-size: 10px;
+  }
+  .titleStyle {
+    font-size: 28px;
+  }
+  .subtitle {
+    font-size: 13px;
+  }
+  .headersection2 {
+    margin-top: 30px;
+  }
+  .footerColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header {
+    padding: 0 0 30px 30px;
+  }
+  .headerBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
